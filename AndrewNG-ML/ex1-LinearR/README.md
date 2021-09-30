@@ -2,7 +2,7 @@
 
 [Tutorial](https://github.com/PeterWrighten/MachineLearning/blob/main/AndrewNG-ML/ex1-LinearR/ex1.pdf)
 
-Checkpoint|Link
+Checkpoint|Code
 --:|--:
 warmUpExercise | [WU](https://github.com/PeterWrighten/MachineLearning/blob/main/AndrewNG-ML/ex1-LinearR/warmUpExercise.m)
 computeCost | [CC](https://github.com/PeterWrighten/MachineLearning/blob/main/AndrewNG-ML/ex1-LinearR/computeCost.m)
