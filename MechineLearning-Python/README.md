@@ -15,11 +15,12 @@ You could just use Google Colaboratory to access LectureNotes(.ipynb) and Assign
 
 I would show you how to do it:
 
-1. Clik "File" Tab in the Tab bar.
-2. Choose "Open Notebook" and clik it.
-3. Choose "GitHub" in Tab bar.
-4. Type my URL "https://github.com/PeterWrighten" in "Enter a GitHub URL or search by organization or user".
-5. Check My Repo " MachineLearning" and choose the Lecture or Assign File which you wanna implement, then enjoy it(lol).
+1. Sign in your Google Colaboratory.
+2. Clik "File" Tab in the Tab bar.
+3. Choose "Open Notebook" and clik it.
+4. Choose "GitHub" in Tab bar.
+5. Type my URL "https://github.com/PeterWrighten" in "Enter a GitHub URL or search by organization or user".
+6. Check My Repo " MachineLearning" and choose the Lecture or Assign File which you wanna implement, then enjoy it(lol).
 
 ## Normal Way
 
