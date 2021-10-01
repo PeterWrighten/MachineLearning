@@ -1,7 +1,7 @@
 # MechineLearning Basic By Python
 
 This is a Basic MachineLearning course powered by Python 3 in Japan's University.
-Projects could directly implement by Python compiler, but LectureNotes should use [Google Colaboratory](https://colab.research.google.com/).
+Assignments could directly implement by Python compiler, but LectureNotes should use [Google Colaboratory](https://colab.research.google.com/).
 
 Course|Lecture|Assignments
 --:|--:|--:
