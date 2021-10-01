@@ -5,7 +5,7 @@ Projects could directly implement by Python compiler, but LectureNotes should us
 
 Course|Lecture|Assignments
 --:|--:|--:
-1.Prerequisite  | [01](https://github.com/PeterWrighten/MachineLearning/tree/main/MechineLearning-Python/1.Prerequisite)  | -
+1.Prerequisite  | [01](https://github.com/PeterWrighten/MachineLearning/tree/main/MechineLearning-Python/1.Prerequisite)  | [Pre](https://github.com/PeterWrighten/MachineLearning/blob/main/MechineLearning-Python/1.Prerequisite/pre.py)
 
 # Guidance
 
