@@ -12,4 +12,4 @@ Ex3: Multi-class Classification & Neural Net |  [Ex3](https://github.com/PeterWr
 
 I also implement some basic MachineLearning Algorithms by Python, And If you are interested about it, Please Check:
 
-[MachineLearning-Python](https://github.com/PeterWrighten/MachineLearning/blob/main/MechineLearning-Python/README.md)
+[MachineLearning-Python](https://github.com/PeterWrighten/OU-Courses-B2/blob/main/B2/MechineLearning-Python/README.md)
