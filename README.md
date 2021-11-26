@@ -36,7 +36,7 @@ def FindMostSimilarPoint(data, idx):
 
 # Lecture 2: K Nearest Neighbor Algorithms
 
-Return the list of indexes which are most similar with input.
+Return the list of indices which are most similar with input.
 
 ```python
 def knnSearch(data, idx, k):
