@@ -39,9 +39,9 @@ def knnSearch(data, idx, k):
     return num
 
 
-query = input("Please input query number: ")
+query = input("Please input index of data you wanna query: ")
 query = int(query)
-k = input("Please input k: ")
+k = input("How many most similar points do you wanna query? >> ")
 k = int(k)
 neighbors = knnSearch(x, query, k)
 
