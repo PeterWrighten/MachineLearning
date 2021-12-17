@@ -204,4 +204,14 @@ def optimizeRegression(X, Y, l_rate=0.005, n_epoch=10):
   return a, b
 ```
 
+**MultiRegression**
+
+
+**Lasso Regression**
+
+In order to implement Lasso Regression, we would utilize Python Module ```from sklearn import linear_model```, and implement API ```Lasso.fit(X, Y)```, then ```Lasso.coef_``` is weights, and ```Lasso.intercept_``` is intercept.
+
 # Lecture 2: Unsupervised Learning
+
+## Part 1: Clustering
+
