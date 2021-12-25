@@ -3,6 +3,42 @@
 This is a MachineLearning course powered by Python 3.
 
 
+**Syntax**
+
+- KNN Search 
+
+Sort
+
+```python
+import numpy as np
+sample_arr = np.array([4, 2, 6, 1, 3, 0])
+np.sort(sample_arr)
+```
+
+Argsort(Descent sequence to display index)
+
+```python
+np.argsort(sample_arr)
+```
+
+Choose Multi-variable
+
+```python
+sample_list = np.array([5, 4, 3, 2, 1, 0])
+indices = [0, 2, 4]
+sample_list[indices]
+```
+Mode
+
+```python
+import scipy.stats as stats
+sample_list = np.array([0, 1, 2, 1, 1, 1])
+mode, _ = stats.mode(sample_list)
+mode[0]
+```
+
+
+
 
 # Lecture 1: Supervised Learning
 
