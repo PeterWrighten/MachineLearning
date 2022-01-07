@@ -251,3 +251,82 @@ In order to implement Lasso Regression, we would utilize Python Module ```from s
 
 ## Part 1: Clustering
 
+### K-means Algorithm
+
+*Algorithm's Basis:* Minimum Spanning Tree in Graph.
+
+*Prerequisites:* 
+
+1. The number of clusters necessary.
+2. All axis's data necessary
+
+*Advantage:* Benifitial to grasp the data structure.
+
+*Method:* 
+
+- Initialization: Acollate centers randomly.
+- 1. Calculate EuclidDistance between *centers* and *data*. 
+- 2. classify spot to its nearest center's cluster
+- 3. Recenter cluster (New Mean)
+- Loop 1, 2, 3
+
+**Initialization**
+
+1. Random Init
+
+```python
+n_clust = 5
+
+def init_random(X, n_clust):
+    centers = np.zeros((n_clust, X.shape[1]))
+    np.random.seed(seed = 32)
+    centers[:, 0] = np.random.randint(low = min(X[:, 0]), high = max(X[:, 0]), size = n_clust)
+    centers[:, 1] = np.random.randint(low = min(X[:, 1]), high = max(X[:, 1]), size = n_clust)
+    return centers
+```
+
+2. K-means++: seperate clusters's centers.
+
+*Method:*
+
+Define probablity to choose next cluster's center:
+
+- Proportional to square of distances among chosen centers.
+
+![picture 1](images/b9e1a778bd02fb01594f69c4ace72a8314a1071eeaca02b5348cb337faac6ffa.png) 
+
+- Numerator: square of distance between current spot and chosen center(s).
+- Denominator: N means the dataset which waits to be chosen.
+
+![picture 2](images/4e5fcb95cbc40f64dabb831948736277263c6272a1aa23c4d70b6a32971712ae.png)  
+
+- Orange: chosen center(s)
+- Blue: Waitlist
+
+
+```python 
+def init_kmpp(X, n_clust):
+    np.random.seed(seed = 32)
+    indice = np.random.choice(range(X.shape[0]), n_clust)
+    centers = X[indice, :]
+    return centers
+```
+
+**K-means**
+
+```python
+def kmeans(X, n_clust, centers, n_iter = 10):
+    clst_idx = np.zeros(X.shape[0])
+    dist = np.zeros((X.shape[0], n_clust))
+    for iter in range(n_iter):
+        for i in range(X.shape[0]):
+            for k in range(n_clust):
+                dist[i][k] = np.sum(np.square(centers[k, :] - X[i, :]))
+        clst_idx = np.argmin(dist, axis = 1)
+        plot_clusters(x, clst_idx, centers)
+
+        for j in range(n_clust):
+            centers[j, :] = np.mean(X[clst_idx == j], axis = 0)
+    
+    return clst_idx
+```
