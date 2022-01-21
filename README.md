@@ -330,3 +330,14 @@ def kmeans(X, n_clust, centers, n_iter = 10):
     
     return clst_idx
 ```
+
+## Part 2: Outlier Detection
+
+### Local Outlier Factor
+**LOF: Essence**
+
+![picture 1](images/00523bb5b28948dbe4c585944677b935d6003a0bc4a358b3dfed62b35e839e90.png)  
+
+![picture 2](images/4797e8aa5d3b39a578e2c6657cd8be7f9472263dcc38b08a6f25e4ab7f40f68e.png)  
+
+when LOF(p) > threshold, it was seperated.
