@@ -66,7 +66,7 @@ Then, Find most similar point and return index of it;
 ```python
 def FindMostSimilarPoint(data, idx):
     id = []
-    for i in range(0, 50):
+    for i in range(50):
         id.append(CalcDist(data, idx, i))
     id.pop(idx)
     y = max(id) + 1
@@ -85,14 +85,14 @@ def knnSearch(data, idx, k):
     id = []
     num = []
 
-    for i in range(0, 50):
+    for i in range(50):
         id.append(CalcDist(data, idx, i))
 
     id.pop(idx)
     y = max(id) + 1
     id.insert(idx, y)
 
-    for j in range(0, k):
+    for j in range(k):
         a = id.index(min(id))
         num.append(a)
         id.pop(a)
